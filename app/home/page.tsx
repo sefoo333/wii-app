@@ -10,7 +10,7 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import Link from "next/link";
 import { RxTransform } from "react-icons/rx";
 
-export let Seeea:any = createContext(null)
+// export let Seeea:any = createContext(null)
 
 export default function Home() {
 
@@ -52,9 +52,9 @@ export default function Home() {
     console.log(data)
     return (
         <>
-            <Seeea.Provider value={{ setSearch }}>
                 <Nav />
-            </Seeea.Provider>
+{/*             <Seeea.Provider value={{ setSearch }}>
+            </Seeea.Provider> */}
             <div className="parent">
 
                 <div className="projects my-[50px] px-[20px]">
