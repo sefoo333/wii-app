@@ -10,7 +10,7 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import Link from "next/link";
 import { RxTransform } from "react-icons/rx";
 
-// export const Seeea: any = createContext("");
+ export let Seeea: any = createContext("");
 
 function Home() {
     let [id, setId] = useState("")
