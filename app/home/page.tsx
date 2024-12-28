@@ -10,7 +10,7 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import Link from "next/link";
 import { RxTransform } from "react-icons/rx";
 
-export const Searcher = createContext("")
+export const Searcher:string | any = createContext("")
 
 export default function Home() {
 
