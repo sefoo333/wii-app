@@ -10,7 +10,11 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import Link from "next/link";
 import { RxTransform } from "react-icons/rx";
 
+<<<<<<< HEAD
 export const Seeea = createContext("")
+=======
+export const Searcher:string | any = createContext("")
+>>>>>>> dd1fea1b58f3ebae2840838df5ea9c61a1730d2a
 
 export default function Home() {
 
