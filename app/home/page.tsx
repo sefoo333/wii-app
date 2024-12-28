@@ -47,7 +47,7 @@ export default function Home() {
     let [data, setData] = useState([])
 
 
-    let [search, setSearch]: any = useState("")
+    // let [search, setSearch]: any = useState("")
 
     console.log(data)
     return (
