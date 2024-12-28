@@ -10,12 +10,9 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import Link from "next/link";
 import { RxTransform } from "react-icons/rx";
 
-// export let Seeea:any = createContext(null)
+export const Seeea: any = createContext("");
 
-export default function Home() {
-
-    document.body.style.backgroundColor = "whitesmoke"
-
+function Home() {
     let [id, setId] = useState("")
     useEffect(() => {
         const getdata = onAuthStateChanged(auth, (user: any) => {
@@ -47,14 +44,14 @@ export default function Home() {
     let [data, setData] = useState([])
 
 
-    // let [search, setSearch]: any = useState("")
+    let [search, setSearch]: any = useState("")
 
     console.log(data)
     return (
         <>
+            <Seeea.Provider value={{ setSearch }}>
                 <Nav />
-{/*             <Seeea.Provider value={{ setSearch }}>
-            </Seeea.Provider> */}
+            </Seeea.Provider>
             <div className="parent">
 
                 <div className="projects my-[50px] px-[20px]">
@@ -164,3 +161,5 @@ export default function Home() {
         </>
     );
 }
+
+export default Home;
