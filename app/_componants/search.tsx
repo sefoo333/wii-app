@@ -1,6 +1,6 @@
 "use client"
 import React, { useContext } from 'react'
-import { Seeea } from '../home/page'
+import  Seeea  from '../home/page'
 
 function Search() {
     let { setSearch }: any = useContext(Seeea)
