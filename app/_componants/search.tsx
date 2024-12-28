@@ -1,9 +1,9 @@
 "use client"
 import React, { useContext } from 'react'
-import  Seeea  from '../home/page'
+// import  Seeea  from '../home/page'
 
 function Search() {
-    let { setSearch }: any = useContext(Seeea)
+    // let { setSearch }: any = useContext(Seeea)
     return (
         <div className="relative">
             <label htmlFor="Search" className="sr-only"> Search </label>
